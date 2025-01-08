@@ -11,7 +11,6 @@ public class PropUtils {
 		  try {
 			fis=new FileInputStream(filePath);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	   Properties prop=new Properties();
