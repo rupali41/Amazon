@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 30 22:35:30 PST 2024</td>
+<td>Started on:</td><td>Thu Jan 02 23:18:36 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2113 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17381 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,105 +76,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Verify user added product in cart and click on plus sign quntity of that product is increases", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
+<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify is Paste functionality working in password text box.", "This feature file tests all scenario of loginPage of amazon."</td>
+<td><div><pre>java.lang.AssertionError: Bug: Paste functionality is enabled, password was pasted into the field.
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.testingShastra.stepdefinations.BddAmazonTestCases.verifyPasteFunctionality(BddAmazonTestCases.java:227)
+	at ✽.Verify is paste functionality working or not(file:///D:/Workspace/AmazonFrameworkDesign/src/test/resources/features/login.feature:88)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1905758022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1905758022'><pre>java.lang.AssertionError: Bug: Paste functionality is enabled, password was pasted into the field.
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.testingShastra.stepdefinations.BddAmazonTestCases.verifyPasteFunctionality(BddAmazonTestCases.java:227)
+	at ✽.Verify is paste functionality working or not(file:///D:/Workspace/AmazonFrameworkDesign/src/test/resources/features/login.feature:88)
+</pre></div></td>
+<td>9</td>
+<td>com.testingshashtra.runner.FeatureRunner@194fad1</td></tr>
 <tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Click On Proceed To By then Checkout Page Is Display", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify when user added the product in shopping cart succesufully or not", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify After adding product into cart product details in the cart is same as product display page", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Click On DeselectAll button No Item Selected Message Is Displayed", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Click On Save To Later product Is Move To Save To later", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Verify user added Two product in the cart then subTotal of product is increases", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Save To Later Option Is Dispaly and Enable", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify user Click On See More Like These then Similar Products Page Is Open", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Verify user added product in cart and click on subtract sign quntity of that product is decrease", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify product Display Is Same After Refresh Browser page", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Click On SelectAll button selected Item count is Displayed", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify user Redirect To Product Details Page After click on product From Shopping Cart", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Click On Delete Product Message These Product Title Page Is Open", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify user added same product In Two Times Quntity of product is increase", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify user Click On shsre then share to friend Page Is Open", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Delete One Product From Cart Delete Message Should Be Display", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify all Product Is Remove In cart then Cart Is Empty", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Click On Add to Shopping List then Product Is Added To Shopping List message is display", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
-<tr>
-<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify User Click On Added To Shopping  then Shopping List page is open", "This feature file contains all scenarios of shopping cart on amazon."</td>
-<td></td>
-<td>0</td>
-<td>com.testingshashtra.runner.FeatureRunner@548a24a</td></tr>
+<td title='com.testingshashtra.runner.FeatureRunner.runScenario()'><b>runScenario</b><br>Test class: com.testingshashtra.runner.FeatureRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify when user enter number and special charecter in search box its should display no result message.", "This feature file contains all product page test cases."</td>
+<td><div><pre>java.lang.AssertionError: Bug: Expected &apos;No results for ...&apos; but got results instead.
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.testingShastra.stepdefinations.BddProductPage.verifynoResultMsg(BddProductPage.java:41)
+	at ✽.Verify no result message is displayed or not(file:///D:/Workspace/AmazonFrameworkDesign/src/test/resources/features/product_page.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1449360639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1449360639'><pre>java.lang.AssertionError: Bug: Expected &apos;No results for ...&apos; but got results instead.
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.testingShastra.stepdefinations.BddProductPage.verifynoResultMsg(BddProductPage.java:41)
+	at ✽.Verify no result message is displayed or not(file:///D:/Workspace/AmazonFrameworkDesign/src/test/resources/features/product_page.feature:6)
+</pre></div></td>
+<td>7</td>
+<td>com.testingshashtra.runner.FeatureRunner@194fad1</td></tr>
 </table><p>
 </body>
 </html>

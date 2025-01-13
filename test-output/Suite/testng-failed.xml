@@ -3,19 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="AmazonTestCases.ShoppingCartPage_TestCases">
+      <class name="com.testingshashtra.runner.FeatureRunner">
         <methods>
-          <include name="verifyClickOnAddtoShoppingListThenProductIsAddedToShoppingList"/>
-          <include name="verifyUserDeleteOneProductFromCartDeleteMessageShouldBeDisplay"/>
-          <include name="verifyProductQuantityDecreasesWhenSubtractSignIsClicked"/>
-          <include name="x1"/>
-          <include name="setup"/>
-          <include name="verifyProductQuantityIncreasesWhenPlusSignIsClicked"/>
-          <include name="verifyUserClickOnAddedToShoppingListShoppingListIsDisplay"/>
-          <include name="tearDown"/>
-          <include name="loginAmazon"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="33 18 50 28"/>
         </methods>
-      </class> <!-- AmazonTestCases.ShoppingCartPage_TestCases -->
+      </class> <!-- com.testingshashtra.runner.FeatureRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

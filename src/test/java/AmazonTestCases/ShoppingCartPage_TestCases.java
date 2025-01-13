@@ -14,7 +14,7 @@ import com.testingShastra.Base.TestBase;
 import com.testingShastra.pages.AddedToCartPage;
 import com.testingShastra.pages.HomePage;
 import com.testingShastra.pages.LoginPage;
-import com.testingShastra.pages.Product_displayPage;
+import com.testingShastra.pages.ProductDisplayPage;
 import com.testingShastra.pages.ShoppingCartPage;
 import com.testingShastra.pages.AllProductsPage;
 import com.testingShastra.utils.PropertiesFile;
@@ -48,7 +48,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 	public static void verifyIsProductAddedToCartOrNot() {
 		HomePage homepage = new HomePage();
 		AllProductsPage productpage = new AllProductsPage();
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		AddedToCartPage addtocart = new AddedToCartPage();
 		homepage.sendTextOnSearchBox(PropertiesFile.EnterText());
 		homepage.clickOnTshirtToSelect();
@@ -70,7 +70,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 		homepage.clickOnTshirtToSelect();
 		productpage.clickTshirtComboProductToSelect();
 		productpage.switchToanotherWindow(PropertiesFile.switchToTshirtWindowUrl());
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		displayProduct.clickOnAddToCart();
 		addcart.clickOnGotoCartBttn();
 		int QuntityOfPrdctBefor = shoppingCart.getQuntityOfSameProduct();
@@ -94,7 +94,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 		homepage.clickOnTshirtToSelect();
 		productpage.clickTshirtComboProductToSelect();
 		productpage.switchToanotherWindow(PropertiesFile.switchToTshirtWindowUrl());
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		displayProduct.clickOnAddToCart();
 		addcart.clickOnGotoCartBttn();
 		int QuntityOfPrdctBefor = shoppingCart.getQuntityOfSameProduct();
@@ -111,7 +111,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 	public static void verifyTotalProductsQuntityIsIncreasedAfterAddingAnotherProduct() {
 		HomePage homepage = new HomePage();
 		AllProductsPage productpage = new AllProductsPage();
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		AddedToCartPage addcart = new AddedToCartPage();
 		ShoppingCartPage shoppingcart = new ShoppingCartPage();
 		homepage.sendTextOnSearchBox(PropertiesFile.EnterText());
@@ -138,7 +138,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 	public void verifyQuantityIncreasesWhenSameProductIsAddedToCart() {
 		HomePage homepage = new HomePage();
 		AllProductsPage productpage = new AllProductsPage();
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		AddedToCartPage addcart = new AddedToCartPage();
 		ShoppingCartPage shoppingcart = new ShoppingCartPage();
 		homepage.sendTextOnSearchBoxAndEnter(PropertiesFile.entertshirtturns(), Keys.ENTER);
@@ -162,7 +162,7 @@ public class ShoppingCartPage_TestCases extends TestBase {
 	public void verifyProductNameAndPriceInCart() {
 		HomePage homepage = new HomePage();
 		AllProductsPage productpage = new AllProductsPage();
-		Product_displayPage displayProduct = new Product_displayPage();
+		ProductDisplayPage displayProduct = new ProductDisplayPage();
 		AddedToCartPage addcart = new AddedToCartPage();
 		ShoppingCartPage shoppingcart = new ShoppingCartPage();
 		homepage.sendTextOnSearchBoxAndEnter(PropertiesFile.entertshirtturns(), Keys.ENTER);
